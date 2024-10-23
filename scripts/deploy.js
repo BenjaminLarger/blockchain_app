@@ -1,12 +1,11 @@
 const hre = require("hardhat");
 
 async function main() {
-  const Tournament = await hre.ethers.getContractFactory("Tournament");
-  const tournament = await Tournament.deploy();
+  const Contract = await hre.ethers.deployContract("TournamentManager", []);
 
-  await tournament.deployed();
+  await Contract.waitForDeployment();
 
-  console.log("Tournament deployed to:", tournament.address);
+  console.log(`Contract deployed to ${await Contract.getAddress()}`);
 }
 
 main().catch((error) => {

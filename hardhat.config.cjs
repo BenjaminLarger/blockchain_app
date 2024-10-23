@@ -10,6 +10,7 @@ module.exports = {
       },
     },
   },
+  hardat: {},
   networks: {
     hardhat: {
       chainId: 1337, // Chain ID for the local Hardhat network
