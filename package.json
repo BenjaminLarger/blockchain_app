@@ -8,9 +8,9 @@
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "ethers": "^6.0.0",
     "hardhat": "^2.22.14",
-    "hardhat-gas-reporter": "^1.0.0",
-    "ethers": "^6.0.0"
+    "hardhat-gas-reporter": "^1.0.0"
   },
   "dependencies": {
     "abbrev": "^1.0.9",
